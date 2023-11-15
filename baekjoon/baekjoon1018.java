@@ -1,7 +1,6 @@
 import java.util.Scanner;
-import java.math.*;
 
-public class Main {
+public class baekjoon1018 {
     public static void main(String[] args) {
         int n, m = 0;
         int chan = 64;
