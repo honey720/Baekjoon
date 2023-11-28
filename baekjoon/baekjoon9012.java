@@ -21,19 +21,15 @@ public class baekjoon9012 {
                     else
                         st.pop();
                 }
-                else {
+                else
                     st.push('(');
-                }
             }
-            if(st.size() != 0) {
+            if(st.size() != 0)
                 incorrect = true;
-            }
-            if(incorrect) {
+            if(incorrect)
                 System.out.println("NO");
-            }
-            else {
+            else
                 System.out.println("YES");
-            }
         }
     }
 }
