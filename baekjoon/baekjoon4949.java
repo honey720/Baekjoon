@@ -15,21 +15,13 @@ public class baekjoon4949 {
                     stack.push(input.charAt(i));
                 }
                 else if(input.charAt(i) == ')') {
-                    if(stack.isEmpty()) {
-                        System.out.println("no");
-                        break;
-                    }
-                    else if(stack.pop() != '(') {
+                    if(stack.isEmpty() || stack.pop() != '(') {
                         System.out.println("no");
                         break;
                     }
                 }
                 else if(input.charAt(i) == ']') {
-                    if(stack.isEmpty()) {
-                        System.out.println("no");
-                        break;
-                    }
-                    else if(stack.pop() != '[') {
+                    if(stack.isEmpty() || stack.pop() != '[') {
                         System.out.println("no");
                         break;
                     }
