@@ -2,7 +2,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Scanner;
 
-public class beakjoon2164 {
+public class baekjoon2164 {
 
     public static void main(String[] args) {
         Queue<Integer> q = new LinkedList<>();
