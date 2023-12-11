@@ -9,7 +9,7 @@ public class baekjoon18111 {
         StringTokenizer st = new StringTokenizer(br.readLine());
 
         int answer = 0;
-        int answerTime = 999999;
+        long answerTime = 999999999;
         int max = 0;
         int min = 256;
         int x = Integer.parseInt(st.nextToken());
@@ -52,7 +52,7 @@ public class baekjoon18111 {
                 }
             }
         }
-        System.out.println(answer + " " + answerTime);
+        System.out.println(answerTime + " " + answer);
 
     }
 }
