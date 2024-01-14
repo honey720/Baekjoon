@@ -8,7 +8,6 @@ public class BOJ_C00_L23_18222 {
     public static void main(String[] args) throws Exception{
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         k = Long.parseLong(br.readLine());
-
         DnC(1);
         if(change) {
             System.out.println(1);
