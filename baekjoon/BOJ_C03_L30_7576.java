@@ -30,21 +30,19 @@ public class BOJ_C03_L30_7576 {
             }
         }
 
+        int[][] range = {{0,-1}, {0,1}, {-1,0}, {1,0}};
         while (true) {
             int count = queue.size();
             boolean changed = false;
             for(int i = 0; i < count; i++) {
                 int[] coor = queue.poll();
-                int[] range = {-1, 0, 1};
-                for(int a: range) {
-                    for(int b: range) {
-                        int x = coor[0] + a;
-                        int y = coor[1] + b;
-                        if(((x >= 0 && x < N) && (y >= 0 && y < M)) && ((a == 0 || b == 0) && (a != b)) && map[x][y] == 0) {
-                            map[x][y] = 1;
-                            queue.offer(new int[]{x, y});
-                            changed = true;
-                        }
+                for(int[] r: range) {
+                    int x = coor[0] + r[0];
+                    int y = coor[1] + r[1];
+                    if(((x >= 0 && x < N) && (y >= 0 && y < M)) && map[x][y] == 0) {
+                        map[x][y] = 1;
+                        queue.offer(new int[]{x, y});
+                        changed = true;
                     }
                 }
             }
