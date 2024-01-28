@@ -56,7 +56,6 @@ public class BOJ_C03_L30_7569 {
         bw.close();
     }
 
-
     public static void BFS() {
         boolean searched = false;
         int count = queue.size();
