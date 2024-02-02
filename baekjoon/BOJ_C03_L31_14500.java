@@ -69,7 +69,6 @@ public class BOJ_C03_L31_14500 {
                             }
                         }
                     }
-
                 }
             }
         }
