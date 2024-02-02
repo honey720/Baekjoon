@@ -17,7 +17,6 @@ public class BOJ_C03_L31_14500 {
 
         N = Integer.parseInt(st.nextToken());
         M = Integer.parseInt(st.nextToken());
-
         map = new int[N][M];
 
         for(int i = 0; i < N; i++) {
