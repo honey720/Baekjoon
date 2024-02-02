@@ -1,7 +1,7 @@
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
-public class BOJ_C00_L23_18222 {
+public class BOJ_L23_18222 {
 
     static long k;
     static boolean change = false;

@@ -2,7 +2,7 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class BOJ_C00_L23_1535 {
+public class BOJ_L23_1535 {
 
     static int N;
     static int[] heart;

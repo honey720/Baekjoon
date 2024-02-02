@@ -4,7 +4,7 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.util.StringTokenizer;
 
-public class BOJ_C00_L20_1010 {
+public class BOJ_L20_1010 {
 
     public static int [][] dp = new int[30][30];
     public static int answer;

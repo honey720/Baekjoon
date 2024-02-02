@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class BOJ_C00_L11_2742 {
+public class BOJ_L11_2742 {
 
     public static void main(String[] args) {
 

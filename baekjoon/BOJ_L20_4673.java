@@ -1,4 +1,4 @@
-public class BOJ_C00_L20_4673 {
+public class BOJ_L20_4673 {
     static int d[] = new int [10036];
     public static void main(String[] args) {
         for (int i = 1; i <= 10000; i++) {

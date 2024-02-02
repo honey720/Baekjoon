@@ -12,7 +12,7 @@
 
 클래스명 규칙
 - BOJ_CXX_LXX_Num
-- C: solved.ac CLASS 단계 (00 ~ 10)
+- C: solved.ac CLASS 단계 (01 ~ 10)
 - L: solved.ac 문제 레벨
 - 00 ~ 01: Unrated ~ Seed
 - 10 ~ 14: Bronze V ~ Bronze I
