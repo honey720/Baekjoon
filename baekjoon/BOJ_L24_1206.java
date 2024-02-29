@@ -11,6 +11,7 @@ public class BOJ_L24_1206 {
             StringTokenizer st = new StringTokenizer(br.readLine(), ".");
             avg[i] = Integer.parseInt(st.nextToken() + st.nextToken());
         }
+        int p = 1000;
         for(int i = 1; i <= 1000; i++) {
             boolean chk = true;
             for(int j : avg) {
@@ -22,10 +23,11 @@ public class BOJ_L24_1206 {
                 }
             }
             if(chk) {
-                System.out.println(i);
+                p = i;
                 break;
             }
         }
+        System.out.println(p);
         br.close();
     }
 }
