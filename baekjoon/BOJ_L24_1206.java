@@ -11,18 +11,20 @@ public class BOJ_L24_1206 {
             StringTokenizer st = new StringTokenizer(br.readLine(), ".");
             avg[i] = Integer.parseInt(st.nextToken() + st.nextToken());
         }
-        int p = 1000;
+        int p = 1000; //최대를 1000으로 잡고 시작
         for(int i = 1; i <= 1000; i++) {
             boolean chk = true;
             for(int j : avg) {
                 int s = j * i;
                 int e = (j+1) * i;
                 if((s % 1000 != 0 && (e / 1000 - s / 1000 == 0)) || e % 1000 == 0) {
+                    //조건에 만족하지 않음 == 사람 수가 맞지 않음 -> 바로 다음 조건문으로
                     chk = false;
                     break;
                 }
             }
             if(chk) {
+                //모든 평균값들이 조건에 만족한다면 이 값이 정답
                 p = i;
                 break;
             }
