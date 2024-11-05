@@ -21,3 +21,5 @@
 - 40 ~ 44: Platinum V ~ Platinum I
 - 50 ~ 54: Diamond V ~ Diamond I
 - 60 ~ 64: Ruby V ~ Ruby I
+
+```Supported until 240528.```
