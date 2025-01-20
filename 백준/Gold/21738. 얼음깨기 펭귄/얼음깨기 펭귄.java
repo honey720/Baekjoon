@@ -11,23 +11,16 @@ public class Main {
         int S = Integer.parseInt(st.nextToken()); // 지지대 얼음 블록의 개수
         int P = Integer.parseInt(st.nextToken()); // 펭귄이 위치한 얼음 블록의 번호
 
-        TreeMap<Integer, TreeSet<Integer>> tm = new TreeMap<>();
-        TreeSet<Integer> visit = new TreeSet<>();
+        List<List<Integer>> graph = new ArrayList<>();
+        for (int i = 0; i <= N; i++) {
+            graph.add(new ArrayList<>());
+        }
         for (int i = 1; i < N; i++) {
             st = new StringTokenizer(br.readLine());
             int a = Integer.parseInt(st.nextToken());
             int b = Integer.parseInt(st.nextToken());
-            TreeSet<Integer> as;
-            TreeSet<Integer> bs;
-            if (tm.containsKey(a)) as = tm.get(a);
-            else as = new TreeSet<>();
-            as.add(b);
-            tm.put(a, as);
-
-            if (tm.containsKey(b)) bs = tm.get(b);
-            else bs = new TreeSet<>();
-            bs.add(a);
-            tm.put(b, bs);
+            graph.get(a).add(b);
+            graph.get(b).add(a);
         }
 
         int ans = 0;
@@ -35,16 +28,18 @@ public class Main {
         int cnt;
         int d = 0;
         Queue<Integer> q = new LinkedList<>();
+        HashSet<Integer> visit = new HashSet<>();
         q.offer(P);
         visit.add(P);
+
         do {
             d++;
             cnt = q.size();
             for (int i = 0; i < cnt; i++) {
                 int now = q.poll();
-                TreeSet<Integer> ns = tm.get(now);
-                for (int j: ns) {
-                    if (ns.contains(j) && !visit.contains(j)) {
+                List<Integer> ls = graph.get(now);
+                for (int j: ls) {
+                    if (!visit.contains(j)) {
                         if (j <= S && goal < 2) {
                             goal++;
                             ans += d;
